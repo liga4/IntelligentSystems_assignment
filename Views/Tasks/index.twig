@@ -1,0 +1,33 @@
+{% include 'Partials/head.twig' %}
+
+<header>
+    Tasks
+</header>
+<div class="buttons">
+    <button onclick="window.location.href='/add'">Add Task</button>
+</div>
+<div class="task-container">
+    {% if(tasks.all is not empty) %}
+        {% for task in tasks.all %}
+            <div class="task">
+                <h3 class="name">{{ task.name }}</h3>
+                <p class="description">{{ task.description }}</p>
+                <p class="createdAt">{{ task.createdAt }}</p>
+                <form action="/delete" method="POST">
+                    <button
+                            class="delete-button"
+                            name="delete-task"
+                            value="{{ task.id }}">
+                        Delete
+                    </button>
+                </form>
+            </div>
+        {% endfor %}
+    {% else %}
+        <div class="no-tasks">
+            <p>There is no tasks.</p>
+        </div>
+    {% endif %}
+</div>
+
+{% include 'Partials/footer.twig' %}

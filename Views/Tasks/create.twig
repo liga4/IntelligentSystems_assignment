@@ -1,0 +1,25 @@
+{% include 'Partials/head.twig' %}
+
+<header>
+    Add Task
+</header>
+{% if flash_messages is defined %}
+    {% for flashMessage in flash_messages %}
+        <div class="error-message">
+            <p>{{ flashMessage.message }}</p>
+        </div>
+    {% endfor %}
+{% endif %}
+
+<form action="/" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="description">Description:</label>
+    <textarea class="textarea" id="description" name="description" rows="4"></textarea>
+
+    <button class="add" type="submit">Add</button>
+    <a class="cancel-button" href="/">Cancel</a>
+</form>
+
+{% include 'Partials/footer.twig' %}

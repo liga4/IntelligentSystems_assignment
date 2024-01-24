@@ -1,0 +1,155 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+
+}
+
+.task-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.task {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    width: calc(25% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.2s;
+}
+
+.task:hover {
+    transform: scale(1.05);
+}
+
+.task h3 {
+    margin-top: 0;
+}
+
+.task p {
+    color: #555;
+}
+
+.buttons {
+    text-align: end;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.buttons button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #45a049;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+
+.textarea {
+    width: 540px;
+    height: 150px;
+    resize: vertical;
+    padding: 10px;
+}
+
+.add {
+    margin: 10px;
+}
+.createdAt {
+    font-size: 12px;
+}
+.cancel-button {
+    display: inline-block;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+.cancel-button:hover {
+    background-color: crimson;
+}
+.delete-button:hover {
+    background-color: crimson;
+}
