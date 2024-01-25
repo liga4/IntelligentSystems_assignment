@@ -34,6 +34,7 @@ This straightforward yet effective application allows users to effortlessly view
     - cd public
     - php -S localhost:8000
   
+### Result
 
 ![image](https://github.com/liga4/IntelligentSystems_assignment/assets/141454772/b4add503-43a7-46a9-af17-1e776d140d42)  
 ![image](https://github.com/liga4/IntelligentSystems_assignment/assets/141454772/1b92db0d-5b4e-4122-a961-fb2d2147c30c)
