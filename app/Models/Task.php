@@ -21,7 +21,7 @@ class Task
     {
         $this->id = $id;
         $this->name = $name;
-        $this->createdAt = $createdAt == null ? Carbon::now() : new Carbon($createdAt);
+        $this->createdAt = $createdAt == null ? Carbon::now()->setTimezone('Europe/Riga') : new Carbon($createdAt);
         $this->description = $description;
     }
 
